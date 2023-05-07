@@ -1,0 +1,11 @@
+<persistence-unit name="weatherapp-pu" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>Data.WeatherData</class>
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/weatherapp?serverTimezone=UTC"/>
+        <property name="javax.persistence.jdbc.user" value="root"/>
+        <property name="javax.persistence.jdbc.password" value="password"/>
+        <property name="hibernate.hbm2ddl.auto" value="create"/>
+    </properties>
+</persistence-unit>
